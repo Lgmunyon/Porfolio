@@ -3057,7 +3057,7 @@ input, select, textarea {
 		}
 
 		.spotlight:before {
-			background-image: url("images/weightroom.jpg");
+			background-image: url("html5up-gym2/images/weightroom.jpg");
 			content: '';
 			display: block;
 			height: 100%;
