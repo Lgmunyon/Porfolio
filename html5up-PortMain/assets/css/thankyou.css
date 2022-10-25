@@ -1,0 +1,16 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+
+
+body {
+    background: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h1, p {
+    color:#015564 ;
+    font-weight: 700;
+	line-height: 1em;
+	margin: 0 0 0.5625em 0;
+}
