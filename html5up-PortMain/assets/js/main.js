@@ -187,6 +187,7 @@ var allowedKeys = {
 	  // if the last key is reached, activate cheats
 	  if (konamiCodePosition == konamiCode.length) {
 		activateCheats();
+		autoClick();
 		konamiCodePosition = 0;
 	  }
 	} else {
@@ -201,14 +202,14 @@ var allowedKeys = {
 	}else {
 		shown.style.display === "none"
 	}
-	alert("cheats activated");
+	alert("cheat activated");
   }
 
+/* Remove child click event */
   document.addEventListener('mouseup', function(e) {
     var container = document.getElementById('doom-container');
     if (!container.contains(e.target)) {
-        container.style.display = 'none';
+        container.parentElement.removeChild(container);
     }
 });
 
- 
