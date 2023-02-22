@@ -187,7 +187,6 @@ var allowedKeys = {
 	  // if the last key is reached, activate cheats
 	  if (konamiCodePosition == konamiCode.length) {
 		activateCheats();
-		autoClick();
 		konamiCodePosition = 0;
 	  }
 	} else {
