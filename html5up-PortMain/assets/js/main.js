@@ -199,7 +199,7 @@ var allowedKeys = {
 	if (shown.style.display === "" || shown.style.display === "none"){
 		shown.style.display = "block"
 	}else {
-		shown.style.display === "none"
+		shown.style.display = "none"
 	}
 	alert("cheat activated");
   }
