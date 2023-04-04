@@ -205,10 +205,19 @@ var allowedKeys = {
   }
 
 /* Remove child click event */
-  document.addEventListener('mouseup', function(e) {
-    var container = document.getElementById('doom-container');
-    if (!container.contains(e.target)) {
-        container.parentElement.removeChild(container);
-    }
-});
+//   document.addEventListener('mouseup', function(e) {
+//     var container = document.getElementById('doom-container');
+//     if (!container.contains(e.target)) {
+//         container.parentElement.removeChild(container);
+//     }
+// });
+	document.addEventListener('mouseup', function(e) {
+	var container = document.getElementById('doom-container');
+	if (!container.contains(e.target)) {
+		// var innerDoc = container.contentDocument || container.contentWindow.document;
+		// var MediaSource = innerDoc.getElementById('mediaElem')
+		container.style.display = "none";
+		// MediaSource.muted = true
+	    }
+	});
 
